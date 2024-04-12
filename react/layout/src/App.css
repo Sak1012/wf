@@ -1,0 +1,18 @@
+/* App.css */
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
