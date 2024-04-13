@@ -1,14 +1,11 @@
 <div>
-    <!-- Button with click event binding -->
-    <button (click)="handleClick()">Click Me!</button>
-    <p>Click Count: {{ clickCount }}</p>
-  
-    <!-- Input with keyup event binding -->
-    <input (keyup)="handleKeyup($event)" placeholder="Type something..." />
-  
-    <!-- Button with mouse enter and mouse leave event bindings -->
-    <button (mouseenter)="handleMouseEnter()" (mouseleave)="handleMouseLeave()">
-      Hover over me!
-    </button>
-  </div>
-  
+  <!-- Button with click event binding -->
+  <button (click)="handleClick()">Click Me!</button>
+  <p>Click Count: {{ clickCount }}</p>
+
+  <input (keyup)="handleKeyup($event)" placeholder="Type something..." />
+
+  <button (mouseenter)="handleMouseEnter()" (mouseleave)="handleMouseLeave()">
+    Hover over me!
+  </button>
+</div>
