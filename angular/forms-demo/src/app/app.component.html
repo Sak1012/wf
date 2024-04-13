@@ -1,0 +1,12 @@
+<div>
+  <button (click)="showTemplateDrivenForm()">Template-Driven Form</button>
+  <button (click)="showReactiveForm()">Reactive Form</button>
+</div>
+
+<div *ngIf="displayTemplateDrivenForm">
+  <app-template-driven-form></app-template-driven-form>
+</div>
+
+<div *ngIf="displayReactiveForm">
+  <app-reactive-form></app-reactive-form>
+</div>

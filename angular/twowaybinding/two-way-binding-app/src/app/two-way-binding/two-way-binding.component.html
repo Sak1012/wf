@@ -1,0 +1,8 @@
+<div>
+    <!-- Two-way data binding with input -->
+    <input [(ngModel)]="inputValue" (ngModelChange)="handleInputChange()" placeholder="Type something..." />
+    
+    <!-- Display the bound value -->
+    <p>You typed: {{ inputValue }}</p>
+  </div>
+  

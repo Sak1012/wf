@@ -1,0 +1,24 @@
+<!-- Interpolation Example -->
+<div>
+    <!-- Displaying the value of 'greeting' property using interpolation -->
+    <h2>{{ greeting }}, {{ name }}!</h2>
+  </div>
+  
+  <!-- Property Binding Example -->
+  <div>
+    <!-- Binding the 'title' property of the button to 'greeting' property -->
+    <button [title]="greeting">Hover Me</button>
+  </div>
+  
+  <!-- Button to change the greeting -->
+  <div>
+    <button (click)="changeGreeting()">Change Greeting</button>
+  </div>
+  
+  <!-- Input to change the name -->
+  <div>
+    <label>Change Name:</label>
+    <!-- Binding the value of the input to 'name' property -->
+    <input type="text" [(ngModel)]="name">
+  </div>
+  
