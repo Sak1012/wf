@@ -1,0 +1,13 @@
+<h2>View Videos</h2>
+
+<div *ngIf="videos && videos.length > 0; else noVideos">
+  <ul>
+    <li *ngFor="let filename of videos">
+      <a [href]="'http://localhost:3000/uploads/' + filename" target="_blank">{{ filename }}</a>
+    </li>
+  </ul>
+</div>
+
+<ng-template #noVideos>
+  <p>No videos available.</p>
+</ng-template>
